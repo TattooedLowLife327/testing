@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  label {
+    @apply text-xl font-bold;
+  }
+}
+
+/* === CUSTOM FONTS === */
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url('/fonts/HelveticaNeueBold.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeueMedium';
+  src: url('/fonts/HelveticaNeueMedium.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeueLightItalic';
+  src: url('/fonts/HelveticaNeueLightItalic.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url('/fonts/HelveticaNeueLight.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeueRoman';
+  src: url('/fonts/HelveticaNeueRoman.otf');
+}
+
+/* === CURSOR OVERRIDES === */
+* {
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-no-drop {
+  cursor: no-drop;
+}
+
+.cursor-progress {
+  cursor: progress;
+}
+
+/* === HIDE SCROLLBAR ON MOBILE === */
+@media (max-width: 768px) {
+  body, html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px black inset !important;
+  -webkit-text-fill-color: white !important;
+}
